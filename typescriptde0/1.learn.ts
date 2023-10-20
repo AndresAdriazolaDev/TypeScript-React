@@ -1,4 +1,4 @@
-let anyValue: any = "Hello"; //con el any es para ignorar el tipado de typescript, va mucho más allá de que sea cualquier tipo, más bien que lo ignore.
+/*let anyValue: any = "Hello"; //con el any es para ignorar el tipado de typescript, va mucho más allá de que sea cualquier tipo, más bien que lo ignore.
 let unknowValue: unknown = "Hello"; //con el unknow no sabemos que valor viene.
 
 const sayHiFunction = (fn: (name: string) => void) => {
@@ -16,7 +16,7 @@ const sumar = (a: number, b: number): number => {
 };
 
 const restar = (a: number, b: number): number => a - b;
-
+*/
 /*
 
 enum estadoDelContrato {
@@ -93,7 +93,6 @@ function add(x : number | string , y: number | string) {
 console.log(add(1,2)) //✔
 console.log(add('Hola ','Mundo'))//✔
 console.log(add(1,'hola'))//❌
-*/
 
 //intersection types
 
@@ -117,3 +116,17 @@ let nuevoEmpleado: EmpleadoEmpresa = {
 };
 
 console.log(nuevoEmpleado);
+*/
+/*
+let fraseAlReves = (frase) => {
+  return frase.split("").reverse().join("");
+};
+
+console.log(fraseAlReves("Hola mundo"));
+*/
+
+let letraQueSeRepite = (frase: string, letra: string) => {
+  return frase.split("").filter((letraActual) => letraActual === letra).length;
+};
+
+letraQueSeRepite("Hola sacoweas", "a");
